@@ -6,7 +6,7 @@ peticion.then( res => res.json())
         .then(({data})=>
         {
             const {url} = data.images.original;
-            console.log(url)
+            const img = document.createElement('img');
         })
         .catch(console.warn);
 
